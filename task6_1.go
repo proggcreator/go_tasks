@@ -8,7 +8,7 @@ import (
 func main() {
 	var wg sync.WaitGroup
 	chFlag := make(chan bool)
-	wg.Add(1)
+	wg.Add(1) //группв из одной горутины
 	go func() {
 		defer wg.Done()
 		for b := range chFlag {

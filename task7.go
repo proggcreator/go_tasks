@@ -30,8 +30,10 @@ go func ()  {  //первый поток, запись в map
 		counter.Unlock()
 	}
 
+
 	time.Sleep(100 * time.Millisecond) //задержка для выполнения горутины
-	counter.RLock()
+	counter.RLock()	
+		   
 	for k := range counter.m {        //вывод содержимого map
         fmt.Println(counter.m[k], k)
     }

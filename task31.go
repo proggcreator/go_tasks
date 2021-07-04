@@ -20,6 +20,6 @@ func main ()  {
 	dy := math.Pow((p1.Y - p2.Y),2)
 	res :=math.Sqrt(dx+dy)
 	fmt.Println(res)
-		
+	fmt.Prin
 	
 }

@@ -4,11 +4,13 @@ import ("fmt"
 
 func main() {
 	wg := sync.WaitGroup{}
+	
 	for i := 0; i < 5; i++ {
-		wg.Add(1)
-		go func(wg sync.WaitGroup, i int) {
+		wg.Add(1) //группа из одного элемента
+		go func(wg sync.WaitGroup, i int) { 
+			
 			fmt.Println(i)
-			wg.Done()
+			wg.Done() //локальная wg
 		}(wg, i)
 	}
 	wg.Wait()
