@@ -3,11 +3,9 @@ import ("fmt")
 
 
 func main() {
-	N, M := 5,20  //кол-во воркеров и буфер канала
+	N, M := 5,20    //кол-во воркеров и буфер канала
 	intCh := make(chan int,M)
 	
-	
-
 
 for i := 0; i < M; i++ {
 	intCh <- i

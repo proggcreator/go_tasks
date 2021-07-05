@@ -1,7 +1,6 @@
-//при конкурентном выполнении переключение контекста между задачам (если одно ядро).
+
 package main
 import "fmt"
-
 func calculation (x int,inCh chan<- int)  { 	//вычисление квадрата
 	x = x*x
 	inch<-x

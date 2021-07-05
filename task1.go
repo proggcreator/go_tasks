@@ -1,11 +1,10 @@
 package main
 import "fmt"
 
-				//родительская структура
+				  //родительская структура
 type Human struct {
 	age string
 }
-
 				//композиция структуры
 type Action_1 struct {
 	run string
