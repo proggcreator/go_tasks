@@ -11,5 +11,4 @@ func main ()  {
 	fmt.Println(sl)
 	fmt.Println(len(sl))
 
-	
 }

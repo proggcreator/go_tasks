@@ -21,5 +21,4 @@ func main ()  {
 	
 	fmt.Println(slice1)
 	fmt.Println(slice2)
-	
 }

@@ -13,7 +13,6 @@ func backstring(s string) string {
     }
     return string(rev[start:])
 }
-
 func main ()  {
 	str:="some text"
 	str = backstring(str)

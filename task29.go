@@ -22,6 +22,5 @@ func main ()  {
 	fmt.Println(Div(a,b)) //челочисленное деление
 	fmt.Println(Sub(a,b)) //ввчитание
 	fmt.Println(Add(a,b)) //сложение
-	
 
 }

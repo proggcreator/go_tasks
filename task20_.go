@@ -8,6 +8,7 @@ slice := []string{"a", "a"}
 	slice = append(slice, "a") //увеличился размер массива в функции (копия)
 	slice[0] = "b"				
 	slice[1] = "b"
+	
 fmt.Println(slice)
 }(slice)
 fmt.Println(slice)

@@ -1,7 +1,5 @@
 package main
 import ("fmt")
-
-
 // утверждение типа (type assertion)
 func checking(i interface{}){
 	switch i.(type) {

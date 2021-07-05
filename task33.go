@@ -6,7 +6,6 @@ func main ()  {
 	M:=10
 	int1Ch := make(chan int,M)
 	int2Ch := make(chan int,M)
-
 	for i:=0;i<M;i++ { 					//заполняем рандомными значениями 
 		int1Ch<- rand.Int()
 	}

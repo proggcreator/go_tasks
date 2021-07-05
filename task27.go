@@ -12,7 +12,6 @@ func backwords (s string) string {
 	}
 	return newstr
 }
-
 func main ()  {
 	str := "snow dog sun"
 

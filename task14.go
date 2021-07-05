@@ -12,7 +12,8 @@ func main ()  {
 	} 
 	for k := range set {         // вывод множества
     fmt.Println(k)
-	}
+	} 
+	
 	//(set, key)      		// Удаление
 	//size := len(set)       // Размер
 	//_, exists := set[key]

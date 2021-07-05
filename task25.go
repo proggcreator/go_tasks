@@ -6,7 +6,6 @@ import ("fmt"
 type counter struct { 
 	val int
 }
-
 func addCount(c *counter)  { //функция инкрементирования
 	var mutex sync.Mutex
 	mutex.Lock()			//блокируем добавление в  счетчик

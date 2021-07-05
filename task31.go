@@ -11,7 +11,6 @@ func NewPoint (x,y float64) Point {
 		X : x,
 		Y : y,
 	}
-
 }
 func main ()  {
 	p1 := NewPoint(0,0) //первая точка

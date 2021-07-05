@@ -3,6 +3,7 @@ import ("fmt"
 		)
 
 func main() {
+	
 mas_1:=[]int{5,3,6,1,2,4,1,4}
 mas_2:=[]int{3,2,1}
 map_list := make(map [int] int) 

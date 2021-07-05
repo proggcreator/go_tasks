@@ -9,7 +9,6 @@ func checkstring(s string) bool {
 		}
 		setsymb[i]=true
 	}
-
 	return true
 }
 func main ()  {

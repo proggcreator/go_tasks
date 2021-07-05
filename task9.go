@@ -2,6 +2,7 @@ package main
 import ("fmt")
 
 func main() {
+	
 mass:=[]int{1,2,3,4,5,6} 
 var N int  = len(mass)   
 

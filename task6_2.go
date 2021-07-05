@@ -6,7 +6,7 @@ import "time"
 
 func main() {
     
-    ch := make(chan int, 100) //основной канал
+    ch := make(chan int, 100)     //основной канал
     done := make(chan struct{})   //канал для подачи сигнала завершения
     go func() {
         j:=0

@@ -11,7 +11,7 @@ var N int  = 3
 var counter = struct{
     sync.RWMutex
     m map[string]int
-}{m: make(map[string]int)}//инициализация счетчика
+}{m: make(map[string]int)}	//инициализация счетчика
 
 letters := [6]string{"a","b","c","d","f","j"} //массив для значений map
 

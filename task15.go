@@ -16,6 +16,7 @@ func main ()  {
 	fmt.Println("------")
 	fmt.Println(a)
 	fmt.Println(b)
+	
 	//xor
 	a = a ^ b 
 	b = b ^ a

@@ -14,7 +14,6 @@ type oldinter interface {
 }
 //-----------Новый сервис------------------
 type newService struct{}
-
 func (n *newService) getNewValue() {
     fmt.Println("New value")
 }
