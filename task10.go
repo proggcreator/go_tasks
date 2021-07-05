@@ -11,7 +11,7 @@ for _, x := range temperatures {		// проход по массиву
     t := int(math.Trunc(x/10) * 10) 	// округляет температуры (разбиваем на группы по 10)
     temp_map[t] = append(temp_map[t], x)
 }
-//вывод по диапазонам
+										//вывод по диапазонам
 for m,r:= range temp_map{
 	fmt.Println(m,r)
 }

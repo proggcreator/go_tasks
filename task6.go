@@ -1,9 +1,7 @@
 package main
 
-import "fmt"
-import "time"
-
-
+import ("fmt"
+        "time")
 func main() {
     
     ch := make(chan int, 100)     //основной канал
@@ -12,12 +10,13 @@ func main() {
         j:=0
         for { 
             select {
-            case ch <- j :
-            case <-done:
+
+            case ch <- j : //пишем значение 
+
+            case <-done:   // ждем сигнал
                 close(ch)
-                return
+                return     //завершаем горутины
             }
-            
             time.Sleep(100 * time.Millisecond) //каждые 100 мсек цикл
             j++
         }
@@ -34,3 +33,28 @@ func main() {
 
     fmt.Println("finish")
 }
+
+/*package main
+import "sync"
+func main() {
+    var wg sync.WaitGroup
+    wg.Add(1)
+
+    ch := make(chan bool)
+    go func() {
+        for { 		//бесконечный цикл
+            foo, ok := <- ch
+            if !ok { //если канал закрыт
+                println("End")
+                wg.Done()
+                return	//завершение функции
+            }
+            println(foo)
+        }
+    }()
+    ch <- true
+    ch <- true
+    close(ch) //завершение горутины
+
+    wg.Wait()
+}*/

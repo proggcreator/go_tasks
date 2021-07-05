@@ -9,7 +9,6 @@ func main ()  {
 	for i:=0;i<M;i++ { 					//заполняем рандомными значениями 
 		int1Ch<- rand.Int()
 	}
-
 	go func ()  { 						//проверка на четность
 		for x := range int1Ch{
 			if x % 2 == 0 {

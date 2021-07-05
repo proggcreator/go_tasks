@@ -1,21 +1,24 @@
 
 package main
-import "fmt"
-func calculation (x int,inCh chan<- int)  { 	//вычисление квадрата
-	x = x*x
-	inch<-x
+import ("fmt"
+		"sync")
+
+func calculation (x int, wg *sync.WaitGroup )  { 
+	defer wg.Done()
+	fmt.Println(x*x)
+	
 }
 
 func main() {
-	sum :=0
+	var wg sync.WaitGroup 
 	mass := []int{2,4,6,8,10}
-	intCh := make(chan int)
+	wg.Add(len(mass))
 	for i := 0; i < len(mass) ; i++{
-        go calculation(mass[i],intCh) //конкуррентное выполнение
-		sum = sum + <-intCh
+        go calculation(mass[i], &wg) //конкуррентное выполнение
+
     } 
+	wg.Wait()
 	
-	//fmt.Println("End")
 	//fmt.Scanln() //ожидание ввода с консоли 
 
 }

@@ -14,8 +14,10 @@ func checkstring(s string) bool {
 func main ()  {
 	str := "qwertyuiop"
 	if checkstring(str) {
+		
 		fmt.Println("All symbols unique")
 	} else {
+
 		fmt.Println("Symbols not unique")
 	}
 }

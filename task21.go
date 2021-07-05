@@ -12,6 +12,5 @@ func main() {
 		}()
 		time.Sleep(1 * time.Millisecond) //задержка для горутины
 	}
-	
 	time.Sleep(1 * time.Second)
 }

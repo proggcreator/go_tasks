@@ -1,0 +1,1 @@
+time.Sleep(100 * time.Millisecond) //задержка для выполнения горутин

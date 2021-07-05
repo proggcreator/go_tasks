@@ -5,6 +5,7 @@ import ("fmt")
 type oldService struct {
 }
 
+
 func (s *oldService) sendOldVavue(o oldinter) {
     fmt.Println("Old value")
     o.sendValue()
@@ -21,7 +22,7 @@ func (n *newService) getNewValue() {
 type servAdapter struct {
     nserv *newService
 }
-func (a *servAdapter) sendValue() { //сназвание тарого метода в адаптер
+func (a *servAdapter) sendValue() { //название тарого метода в адаптер
     fmt.Println("Adapting")
     a.nserv.getNewValue()
 }

@@ -10,6 +10,7 @@ func main ()  {
 	fmt.Println(a)
 	fmt.Println(b)
 
+	
 	a = a * b
 	b = a / b  
 	a = a / b

@@ -19,7 +19,6 @@ for i := 0; i < len(mas_2); i++ {   //увеличиваем на 1 значен
 		map_list[mas_2[i]] = map_list[mas_2[i]]+1	
 	
 }}
-
 for k,v:= range map_list{
 	if v>1{
 		fmt.Println(k)			//вывод ключей (пересечение массивов)

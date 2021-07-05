@@ -13,8 +13,8 @@ func createHugeString(size int) string {
 
 func someFunc() { 
 	var justString string
-	v := createHugeString(1 << 10)
-	justString = v[:100]  //копируется с конца
+	v := createHugeString(1 << 10) //легко получить переполнение 
+	justString = v[:100]  			//копируется с конца
 	fmt.Println(justString)
 
 }

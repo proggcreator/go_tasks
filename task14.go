@@ -3,7 +3,7 @@ import ("fmt")
 
 func main ()  {
 	type void struct{}  		// пустая структура
-	var empty_val void
+	var empty_val void			// без типа
 	mass := []string{"cat", "cat", "dog", "cat", "tree"}
 	set := make(map[string]void) // Новое пустое множество
 

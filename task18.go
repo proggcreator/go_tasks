@@ -3,8 +3,7 @@ import ("fmt")
 
 func someAction(v []int8, b int8) {
 	v[0] = 100 
-	
-	v = append(v, b) //другой расширенный массив
+	v = append(v, b) //создается другой расширенный массив
 
 }
 func main() {

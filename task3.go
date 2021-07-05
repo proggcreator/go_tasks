@@ -13,12 +13,12 @@ func main() {
 	inCh := make(chan int,5)
 	mass := []int{2,4,6,8,10}
 	for i := 0; i < len(mass) ; i++{
-        go calculation(mass[i],inCh) //конкуррентное выполнение	
-		summ = summ + <-inCh		 //суммирование данных из канала
+        go calculation(mass[i],inCh) 	//конкуррентное выполнение	
+			summ = summ + <-inCh		 //суммирование данных из канала
     } 
 	close(inCh) 
 	fmt.Println(summ)
-	//fmt.Println("End")
+	
 	fmt.Scanln() //ожидание ввода с консоли 
 
 }

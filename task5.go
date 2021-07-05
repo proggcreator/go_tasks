@@ -5,8 +5,6 @@ import ("fmt"
 		"math/rand"
 )
 
-
-
 func main() {
 var N, M int  = 1, 20  //время в сек, размер буфера 
 intCh := make(chan int,M)
@@ -14,7 +12,7 @@ intCh := make(chan int,M)
 			for{								//бесконечный цикл
 				select {					
 					case intCh<- rand.Intn(100)://запись рандомных чисел	
-						
+
 					case x:= <-intCh:{    	   	//чтение из канала
 						fmt.Println(x)
 					}

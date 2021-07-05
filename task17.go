@@ -1,6 +1,7 @@
 package main
 import ("fmt")
 // утверждение типа (type assertion)
+
 func checking(i interface{}){
 	switch i.(type) {
 	case string:
@@ -13,7 +14,6 @@ func checking(i interface{}){
 		fmt.Println("Это channel")
 	}
 }
-
 
 func main() {
 var i interface{} = make(chan int) //"hello" 

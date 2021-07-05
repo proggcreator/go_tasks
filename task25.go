@@ -13,6 +13,7 @@ func addCount(c *counter)  { //функция инкрементирования
 	mutex.Unlock()			//разблокировка 
 }
 
+
 func main ()  {
 	c:=new(counter) 		//новый счетчик
 	go func ()  {

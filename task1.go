@@ -5,16 +5,16 @@ import "fmt"
 type Human struct {
 	age string
 }
-				//композиция структуры
+					//композиция структуры
 type Action_1 struct {
 	run string
-	h Human		//поле с вложенной структурой
+	h Human			//поле с вложенной структурой
 	strx struct{}
 }
-				//композиция структуры
+				
 type Action_2 struct {
 	run string
-	Human 		//вложенная структура
+	Human 			//встраивание
 }
 func (h Human) MethodHuman() string {
 	return h.age + " from human"
